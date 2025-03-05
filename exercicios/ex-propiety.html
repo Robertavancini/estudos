@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> folha teste</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .container{
+            text-align: center;
+            background-color: rgb(93, 156, 135);
+            display: grid;
+            grid-template-columns: 3fr 1fr ;
+            grid-template-areas: "h h "
+                                 "m a "
+                                 "f f " ;
+                                 padding: 20px;
+        }
+
+        .header{
+            background-color: lightblue;
+            grid-area: h;
+            height: 10vh;
+            padding: 10px;
+
+        }
+
+        .main{
+            background-color: lightgreen;
+            grid-area: m;
+            height: 100vh;
+            padding: 30px;
+            
+        }
+        
+        .item{
+            background-color: white;
+            width: 400px;
+            height: 200px;
+            align-content: center;
+        }
+
+        .aside{
+            background-color: lightpink;
+            grid-area: a;
+        }
+
+        .footer{
+            background-color: lightcoral;
+            height: 30vh;
+            grid-area: f;
+        }
+        .div1{
+            background-color: aliceblue;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 50px;
+            justify-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>  
+    <div class="container">
+        <div class="header">
+            <div class="div1">
+                <div><a href="#">home</a></div>
+                <div><a href="#">newsLetter</a></div>
+                <div><a href="#">Club</a></div>
+                <div><a href="#">Mission</a></div>
+                
+            </div>
+        </div>
+        <div class="main">
+            <div class="item">ola, me chamo robert avancini, se voce esta lendo isso, significca que voçê sabe ler</div>
+        </div>
+        <div class="aside">aside</div>
+        <div class="footer">footer</div>
+    </div>
+
+</body>
+</html>
